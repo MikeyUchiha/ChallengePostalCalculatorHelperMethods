@@ -51,7 +51,7 @@ namespace ChallengePostalCalculatorHelperMethods
 
             double width = 0.0;
             double height = 0.0;
-            double length = 0.0;
+            double length = 1.0;
             if (!Double.TryParse(widthTextBox.Text, out width))
                 return;
             if (!Double.TryParse(heightTextBox.Text, out height))
@@ -66,7 +66,7 @@ namespace ChallengePostalCalculatorHelperMethods
             displayShippingCost(totalShippingCost);
         }
 
-        private double calculateTotalShippingCost(double width, double height, double multiplier, double length = 0.0)
+        private double calculateTotalShippingCost(double width, double height, double multiplier, double length = 1.0)
         {
             double result = 0.0;
 
@@ -77,14 +77,11 @@ namespace ChallengePostalCalculatorHelperMethods
             return result;
         }
 
-        private double calculateVolumeOfParcel(double width, double height, double length = 0)
+        private double calculateVolumeOfParcel(double width, double height, double length = 1.0)
         {
             double result = 0.0;
 
-            if (length != 0)
                 result = width * height * length;
-            else
-                result = width * height;
 
             return result;
         }
