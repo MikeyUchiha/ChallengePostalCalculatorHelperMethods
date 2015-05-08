@@ -13,5 +13,35 @@ namespace ChallengePostalCalculatorHelperMethods
         {
 
         }
+
+        protected void groundRadioButton_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        protected void airRadioButton_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        protected void nextDayRadioButton_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        protected void widthTextBox_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        protected void heightTextBox_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        protected void lengthTextBox_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
